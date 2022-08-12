@@ -1,0 +1,389 @@
+/************************ HEADER ***************************/
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* ****************BARRA DE NAVEGACION.******************** */
+.cabecera {
+    background-color: rgb(40, 114, 226);
+}
+.cabecera button {
+    background-color: #00000000;
+        position: relative;
+        left: 60%;
+        bottom: 70px;
+        margin: 1%;
+        border: none;
+    }
+
+
+/* ****************BARRA DE BUSQUEDA. ******************** */
+    .barrasearch {
+        position: absolute;
+        left: 650px;
+        top: 90px;
+    }
+    .barrasearch input {
+        border-color: #ffffff;
+        background-color: #353535;
+        font-size: 20px;
+        width: 330px;
+        height: 40px;
+        border-radius: 35px;
+    }
+    .barrasearch button {
+
+        background-color: #00000054;
+        position: relative;
+        left: 285px;
+        width: 40px;
+        height: 35px;
+        bottom: 45px;
+        border-radius: 35px;
+        border-bottom: 01px;
+ }
+
+
+
+/* **************LOGO PAGINA**************** */
+.cabecera__logo {
+    background-color: rgb(40, 114, 226);
+}
+
+
+
+/* ****************BOTONES MENU DE NAVEGACION****************** */
+.cabecera__nav {
+    background-color: #ffffff;
+}
+
+.cabecera__nav ul {
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    list-style-type: none;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    bottom: 35px;
+}
+
+.cabecera__nav ul li {
+    display: inline;
+    margin: 20px;
+    padding: 6px;
+    background-color: rgb(40, 114, 226);
+    border-radius: 08px;
+    border-bottom: 03px solid; color: rgb(40, 114, 226) ;
+}
+
+.cabecera__nav ul li a {
+    background-color: rgb(40, 114, 226);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.cabecera__nav ul li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+/* ************INFORMACION DE CUOTAS.******************* */
+.info__extra {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: relative;
+    left: 0px;
+    bottom: 80px;
+}
+
+
+/* *****************PORTADA AFA.******************* */
+.portada__web {
+    position: relative;
+    top: -55px;
+
+
+/* ************ BOTON RESERVA DE PORTADA AFA. *************** */
+}
+.boton__reserva {
+    background-color: rgb(40, 114, 226);
+    display: inline;
+    margin-left: 1170px;
+    border-radius: 40px;
+    border-bottom: 02px solid; color: #222324;
+    padding: 20px;
+    position: absolute;
+    right: 255px;
+    bottom: 20px;
+    font-weight: bold;
+    color: #ffffff
+    }
+
+.boton__reserva:hover{
+    background-color: #ffffff;
+    color: black;
+    border-color: #28578d;
+    border-bottom: 02px solid; color: #000000;
+}
+
+
+/* *************GALERIA NIKE.*****************  */
+div.galeria {
+   display: inline-block;
+   margin: 20px;
+   padding: 50px;
+   border: 1px solid rgb(199, 199, 199);
+   width: 180px;
+}
+
+div.galeria:hover {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+div.galeria img {
+   width: 100%;
+   height: auto;
+}
+
+
+
+
+div.galeria__info {
+   padding: 15px;
+   text-align: center;
+}
+
+div.galeria__precio {
+   position: relative;
+   bottom: 10px;
+   font-weight: bolder;
+   text-align: left;
+}
+div.seccion__nike {
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+   margin: 80px;
+   width: 13%;
+   position: absolute;
+   left: 1350px;
+   top: 1000px;
+   }
+
+
+   /*  **************SECCION PUMA.***************  */
+div.puma {
+        display: inline-block;
+        position: relative;
+        left: 30%;
+        margin: 150px;
+        border: 1px solid rgb(199, 199, 199);
+        width: 200px;
+} 
+
+
+/* *****************TEXTO SECCION PUMA************* */
+div.puma__oferta {
+    font-size: 60px;
+    font-weight: bold;
+   margin: 80px;
+   width: 13%;
+   position: absolute;
+   left: 150px;
+   top: 1550px;
+}
+
+.puma__oferta p {
+   color: #000000;
+}
+.puma__oferta p:hover {
+    color: rgb(40, 87, 141);
+    }
+
+
+
+/* ******************PIE DE PAGINA.********************* */
+footer {
+    position: absolute;
+    width: 100%;
+    font-size: 20px;
+    background-color: #252525;
+}
+
+footer .pie td a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer .pie td a:hover {
+    color: rgb(0, 0, 0);
+}
+
+footer h3 {
+    background-color: #252525;
+}
+
+/*GRILLA MOBILE */
+@media screen and (max-width: 768px) and  (orientation:portrait) {
+    #grilla {
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "portada portada portada"
+        "nike nike nike"
+        "offpuma offpuma offpuma"
+        "footer footer footer";
+    }
+
+
+/*LOGO PAGINA*/
+    header section.cabecera img.cabecera__logo {
+        position: sticky;
+        left: 5%;
+        width: 50%;
+        height: 30%;
+        margin: 2%;
+    }
+
+
+/*BOTONES SECUNDARIOS HEADER*/
+    header li#botonheader {
+        position: relative;
+        left: 70%;
+        bottom: 160px;
+        width: 1%;
+        height: 10px;
+        margin: 30px;
+        padding: 20px;
+        color: rgb(40, 114, 226);
+    }
+    header form.barrasearch {
+        position: absolute;
+        margin: 10px;
+        left: 8%;
+        top: 18%;
+    }
+
+
+/*BOTONES NAVBAR*/
+    nav {
+        position: relative;
+        bottom: 15%;
+        width: 94%;
+    }
+    nav.cabecera__nav {
+        position: relative;
+        bottom: 16%;
+        width: 94%;
+        }
+
+    nav.cabecera__nav ul li{
+        position: relative;
+        margin: 2%;
+        padding: 1%;
+        font-size: 15px;
+        bottom: 4px;
+        border-radius: 0.5px;
+        font-size: 18px;
+        font-weight: bold;
+        }
+
+/*PORTADA AFA*/        
+        section#portada .boton__reserva {
+            position: absolute;
+            bottom: 42%;
+            right: 12%;
+            width: 15%;
+            font-size: 8px;
+        } 
+
+        section#portada h4.info__extra {
+            position: relative;
+            text-align: center;
+            font-size: 14px;
+            bottom: 31%;
+            }
+
+            section#nike {
+                position: relative;
+                bottom: 20%;
+                margin: 0;
+                padding: 0;
+                white-space: nowrap;
+                width: 600px;
+                overflow-x: auto;
+                background-color: ddd;
+            }
+/*GALERIA NIKE*/
+            section#nike div.galeria img {
+                display: inline;
+                width: 150px;
+                height: 170px;
+        
+            }
+            div.seccion__nike {
+                display: none;
+            }
+
+/*GALERIA PUMA*/
+     
+
+
+/*PIE DE PAGINA*/
+    footer {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 768px;
+    }
+
+    
+    }
+
+/*GRILLA DESKTOP*/
+@media screen and (max-width: 1200px) and (orientation:landscape) {
+    #grilla {
+        display: grid;
+        grid-area:
+        "header header header header"
+        "nav nav nav nav"
+        "portada portada portada portada"
+        "nike nike nike nike"
+        "offpuma offpuma offpuma offpuma"
+        "footer footer footer footer";
+    }
+    .seccion__nike {
+        position: relative;
+        top: -20p;
+    }
+    footer {
+        position: fixed;
+        bottom: 0%;
+    }
+}
+
+nav {
+    grid-area: nav;
+}
+header {
+    grid-area: header;
+}
+#portada {
+    grid-area: portada;
+}
+#nike {
+    grid-area: nike;
+}
+#offpuma {
+    grid-area: offpuma;
+}
+footer {
+    grid-area: footer;
+}
